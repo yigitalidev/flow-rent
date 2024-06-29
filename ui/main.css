@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+* {
+    
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+#container {
+    display: flex;
+    background-image: url(images/background.jpg);
+    
+    background-color: #1f2029;
+    width: 1500px;
+    height: 1000px;
+    margin-top: 2%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.caricon {
+    position: absolute;
+    width: 100px;
+    
+   top: 130px;
+   left: 230px;
+   
+   
+}
+
+.baslik {
+    position: relative;
+    color: white;
+
+    top: 70px;
+   left: 120px;
+   font-weight: 300px;
+    letter-spacing: 3px;
+    font-family: 'Bruno Ace';
+}
+
+.baslik2 {
+    position: relative;
+    color: white;
+
+    top: 70px;
+    left: 120px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.close {
+    position: relative;
+    top: -80px;
+    cursor: pointer;
+    z-index: 2;
+    left: 1400px;
+    width: 35px;
+    height: 35px;
+    color: rgb(182, 182, 182);
+    border: 0;
+    border-radius: 3px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    
+    box-shadow: 3px 3px 50px red;
+}
+
+
+
+.centerpic {
+    position: relative;
+    left: 200px;
+    top: 200px;
+    max-width: 650px;
+    object-fit: fill;
+    max-height: 300px;
+    height: auto;
+    display: none;
+}
+
+h2 {
+    position: relative;
+    color: #ffffff;
+    top: 180px;
+    left: 333px; 
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: none;
+}
+
+.bottom {
+    position: absolute;
+
+}
+
+.rentingtime {
+    position: absolute;
+    top: 643px;
+    left: 50px;
+    width: 330px;
+    height: 73px;
+    border-radius: 10px;
+    text-align: center;
+    text-indent: -121px;
+    line-height: 70px;
+
+    
+    
+    
+    
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+   
+ 
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.015) 50% ,rgba(107, 107, 107, 0.276) 100% , rgba(191, 191, 191, 0.219) 100%);    
+}
+
+
+.leftbutton {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 190px;
+    top: 20px;
+    color: white;
+    font-size: 27px;
+    font-weight: 100;
+    border: 0;
+    background-color: #3e4146;
+}
+
+.time {
+    position: absolute;
+    top: 1px;
+    left: 300px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rightbutton {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 280px;
+    top: 20px;
+    color: white;
+    border: 0;
+    font-size: 27px; 
+    font-weight: 100;
+    background-color: #3e4146;
+}
+
+.carname3{
+    position: absolute;
+    right: 200px;
+}
+
+
+.rentborder {
+    position: absolute;
+    top: 652px;
+    left: 510px;
+    width: 400px;
+    height: 73px;
+    border-radius: 10px;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.015) 50% ,rgba(107, 107, 107, 0.276) 100% , rgba(191, 191, 191, 0.219) 100%);
+
+}
+
+
+
+.rentCar { 
+    position: relative;
+    top: 662px;
+    left: 492px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    height: 55px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #3973e6;
+    box-shadow: 1px 1px 30px #3973e6;
+   
+    
+}
+
+.rentCar:hover {
+    transition: ease-in-out 0.3s;
+    font-size: 15px;
+    box-shadow: 1px 1px 30px #3973e6;
+}
+
+
+.returnVehicle {
+    position: relative;
+    top: 662px;
+    left: 500px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    height: 55px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #132343;
+    box-shadow: 1px 1px 30px #132343;
+    
+    
+}
+
+.returnVehicle:hover {
+    
+    transition: ease-in-out 0.3s;
+    font-size: 15px;
+    box-shadow: 1px 1px 30px #132343;
+
+}
+
+
+
+
+
+
+
+
+.carlist {
+    position: relative;
+    display: flex;
+    width: 1500px;
+    height: 256px;
+    top: 690px;
+    left: -1px;
+    border-radius: 10px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    scroll-behavior: smooth;
+
+    background-color: transparent;
+
+}
+
+.carlist::-webkit-scrollbar {
+    display: none;
+    
+}
+
+
+.car {
+    display: flex;
+    position: relative;
+    width: 330px;
+    height: 200px;
+    left: 30px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgba(128, 128, 128, 0.776);
+    border-top-color: #3e4146;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.050) 50% ,rgba(107, 107, 107, 0.313) 100% , rgba(191, 191, 191, 0.067) 100%);    
+
+}
+
+
+
+
+
+
+.carlisttitle {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: white;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.carlistimg {
+    position: relative;
+    width: auto;
+    height: 105px;
+    top: 40px;
+    left: 40px;
+
+
+}
+
+.carlistprice {
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    top: 10px;
+    left: 190px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3c753d;
+    text-shadow: 1px 1px 10px white;
+    box-shadow: 1px 1px 3px #3c753d;
+}
+
+
+h3 {
+    position: absolute;
+    top: 140px;
+    left: 30px;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+.carlistrentbutton {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 130px;
+    left: 230px;
+
+    color: white;
+    border: 0;
+    font-size: 27px;
+    font-weight: 100;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #2e64ce;
+
+    box-shadow: 1px 1px 30px #2e64ce;
+
+
+}
+
+.carlistrentbutton:hover {
+   transform: scale(1.1);
+   transition-duration: 1s;
+}
+
+
+
+.icon {
+    position: relative;
+    color: #3c753d;
+    background-color: transparent;
+    font-size: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    top: 820px;
+    left: 17px;
+    z-index: 2;
+    text-shadow: 1px 1px 30px #3c753d;
+}
+
+
+
+.icon2 {
+    position: relative;
+    color: #3c753d;
+    background-color: transparent;
+    font-size: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    top: 720px;
+    left: 1430px;
+    z-index: 2;
+    text-shadow: 1px 1px 30px #3c753d;
+}
+
+

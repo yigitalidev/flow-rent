@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <title>Flow-Rent</title>
+</head>
+<body>
+        <div id="container">
+
+                <div class="top">
+                    <button class="icon" onclick="scrolll()"><i class="fa fa-angle-left"></i></button>
+                    <div class="text">
+                        <img class="caricon" src="images/caricon.svg" alt="">
+                        <h1 class="baslik">Rental Cars</h1>
+                        <p class="baslik2">created by flow development</p>
+
+                    </div>
+
+                    <button id="close" class="close">X</button>
+                    
+
+
+                    <button class="icon2" onclick="scrollr()"><i class="fa fa-angle-right"></i></button>
+                </div>
+
+
+                <div class="center">
+                    
+                    <img id="centerpic" class="centerpic" src="" alt="">
+                    <br> 
+                    <h2 id="carnameCenter">text text text</h2>
+            
+
+                </div>
+
+
+
+                <div class="bottom">
+
+                    <div class="rentingtime">Renting Time (minute)
+                        
+                        <button id="leftbutton" class="leftbutton">&lt;</button>
+                        <p id="timeText" class="time">&nbsp;&nbsp;&nbsp;&nbsp;0</p>
+                        <button id="rightbutton" class="rightbutton">&gt;</button>
+                    
+                    
+                    </div>
+
+                    <div class="rentborder"></div>
+                    <div class="rentborder2"></div>
+                        <button id="rentCar" class="rentCar">Rent Car</button>
+                        <button id="returnVehicle" class="returnVehicle">Return Vehicle</button>
+
+                       
+
+                        <div class="carlist">
+                            
+                            <div class="car">
+                                <p class="carlisttitle">Rental price</p>
+                                <div id="carlistprice1" class="carlistprice">$</div>
+                                <img id="carlistimg1" class="carlistimg" src="images/asea.png" alt="">
+ 
+                                <h3 id="carname1">araba<br>1</h3>
+                                <button id="carlistrentbutton1" class="carlistrentbutton">&gt;</button>
+
+                            </div>
+
+                            <div class="car">
+                                <p class="carlisttitle">Rental price</p>
+                                <div id="carlistprice2" class="carlistprice">$</div>
+                                <img id="carlistimg2" class="carlistimg" src="images/asbo.png" alt=""> 
+                                <h3 id="carname2">araba<br>2</h3>
+                                <button id="carlistrentbutton2" class="carlistrentbutton">&gt;</button>
+                               
+                            </div>
+
+                            <div class="car">
+                                <p class="carlisttitle">Rental price</p>
+                                <div id="carlistprice3" class="carlistprice">$</div>
+                                <img id="carlistimg3" class="carlistimg" src="images/buffalo.png" alt="">
+                                <h3 id="carname3">araba<br>3</h3>
+                                <button id="carlistrentbutton3" class="carlistrentbutton">&gt;</button>
+
+                            </div>
+
+                            <div class="car">
+                                <p class="carlisttitle">Rental price</p>
+                                <div id="carlistprice4" class="carlistprice">$</div>
+                                <img id="carlistimg4" class="carlistimg" src="images/pfister811.png" alt="">
+                                <h3 id="carname4">araba<br>4</h3>
+                                <button id="carlistrentbutton4" class="carlistrentbutton">&gt;</button>
+
+                            </div>
+
+                            <div class="car">
+                                <p class="carlisttitle">Rental price</p>
+                                <div id="carlistprice5" class="carlistprice">$</div>
+                                <img id="carlistimg5" class="carlistimg" src="images/baller4.png" alt="">
+                                <h3 id="carname5">araba<br>5</h3>
+                                <button id="carlistrentbutton5" class="carlistrentbutton">&gt;</button>
+
+                            </div>
+
+                            
+                        </div>
+
+
+                </div>
+
+
+
+
+
+
+
+        </div>
+        <script src="./index.js" type="text/javascript"></script>
+
+        <script>
+            function scrolll() {
+                var left = document.querySelector(".carlist");
+                left.scrollBy(-350, 0)
+            }
+            function scrollr() {
+                var right = document.querySelector(".carlist");
+                right.scrollBy(350, 0)
+            }
+        </script>
+</body>
+</html>
