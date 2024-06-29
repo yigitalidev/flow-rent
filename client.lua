@@ -6,10 +6,6 @@ local car_prices = {}
 local vehicle
 local newPrice
 
-local cashamount = 5
-
-
-
 function SetDisplay(bool)
 	display = bool
 	SetNuiFocus(bool, bool)
